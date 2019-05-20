@@ -3,22 +3,28 @@ package pl.pwr.imagegallery;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.util.ArrayList;
+
 public class ImageData implements Parcelable {
 
     private String url;
     private String title;
     private String date;
+    private ArrayList<String> tags;
 
-    public ImageData(String url, String title, String date) {
+    public ImageData(String url, String title, String date, ArrayList<String> tags) {
         this.url = url;
         this.title = title;
         this.date = date;
+        this.tags = tags;
     }
 
     public ImageData(Parcel in) {
         this.url = in.readString();
         this.title = in.readString();
         this.date = in.readString();
+        tags = new ArrayList<>();
+        in.readList(tags, null);
     }
 
     public static final Parcelable.Creator<ImageData> CREATOR = new Parcelable.Creator<ImageData>() {
@@ -45,6 +51,8 @@ public class ImageData implements Parcelable {
         return date;
     }
 
+    public ArrayList<String> getTags() { return tags; }
+
     public void setUrl(String url) {
         this.url = url;
     }
@@ -67,5 +75,6 @@ public class ImageData implements Parcelable {
         dest.writeString(this.url);
         dest.writeString(this.title);
         dest.writeString(this.date);
+        dest.writeList(this.tags);
     }
 }

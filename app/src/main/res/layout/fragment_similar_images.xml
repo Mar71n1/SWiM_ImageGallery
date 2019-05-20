@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/fragment_similar_images_imageView1"
+        android:layout_columnWeight="1"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fragment_similar_images_imageView4"/>
+
+    <ImageView
+        android:id="@+id/fragment_similar_images_imageView2"
+        android:layout_columnWeight="1"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        app:layout_constraintStart_toEndOf="@id/fragment_similar_images_imageView1"
+        app:layout_constraintBottom_toTopOf="@id/fragment_similar_images_imageView5"/>
+
+    <ImageView
+        android:id="@+id/fragment_similar_images_imageView3"
+        android:layout_columnWeight="1"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        app:layout_constraintStart_toEndOf="@id/fragment_similar_images_imageView2"
+        app:layout_constraintBottom_toTopOf="@id/fragment_similar_images_imageView6"/>
+
+    <ImageView
+        android:id="@+id/fragment_similar_images_imageView4"
+        android:layout_columnWeight="1"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/fragment_similar_images_imageView5"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        app:layout_constraintStart_toEndOf="@id/fragment_similar_images_imageView4"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/fragment_similar_images_imageView6"
+        android:layout_columnWeight="1"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        app:layout_constraintStart_toEndOf="@id/fragment_similar_images_imageView5"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

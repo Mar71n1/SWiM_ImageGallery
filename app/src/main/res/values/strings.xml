@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Image Gallery</string>
     <string name="add_new_image_activity_label">Add new image</string>
+    <string name="image_details_activity_label">Image details</string>
 
     <string name="main_activity_menu_add_title">Add new image</string>
 
@@ -10,5 +11,7 @@
     <string name="add_new_image_activity_title_hint">Enter the title here</string>
     <string name="add_new_image_activity_date_label">Date:</string>
     <string name="add_new_image_activity_date_hint">Enter the date here (dd/MM/yyyy)</string>
-    <string name="add_new_image_activity_button_text">Add</string>
+    <string name="add_new_image_activity_tags_label">Tags: </string>
+    <string name="add_new_image_activity_label_button_text">Label image</string>
+    <string name="add_new_image_activity_add_button_text">Add image</string>
 </resources>
